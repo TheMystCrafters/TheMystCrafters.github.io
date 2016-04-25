@@ -3,9 +3,75 @@
 <head><link rel="stylesheet" type="text/css" href="http://themystcrafters.github.io/main.css"></head>
 <body>
 <ul>
- <li><a class="logo" href="index.html"><img src="myst.png" width="64" height="64" alt="Logo"></a></li>
+ <li><a class="logo" href="http://themystcrafters.github.io/index.html"><img src="myst.png" width="64" height="64" alt="Logo"></a></li>
   <li><a class="active" href="commands.html">Commands</a></li>
 <li><a href="autoplaylist.html">Auto Playlist</a></li>
 </ul>
+<center>
+<h3>Command format: <br>
+!command [optional argument] [multiple | choice | argument] &lt;required argument&gt;</h3>
+<h4> When using arguments, do not include the brackets ([ ] or &lt; &gt;). These are for indicating the type of argument. If an argument starts with an @, i.e. [@user], this indicates that the argument should be a user mention, not just the name of the user. Discord names are not unique, any user can change their name to anything at any time, including the name of other users.
+<br>
+Note: Possible exception or caveat that the user should take note of when using the command. For example: !command is not a real command, just a place holder to demonstrate the command format.
+</h4>
+<table width="800" border="1">
+  <tr>
+    <td width="400"><h4>Command</h4></td>
+    <td width="400"><h4>Descrption</h4></td>
+  </tr>
+  <tr>
+    <td>!play &lt;song link&gt; or !play &lt;song text to search for&gt;</td>
+    <td>Add a song to the queue, or add the first youtube result for the provided search tex</td>
+  </tr>
+  <tr>
+    <td>!queue</td>
+    <td>Prints the bot's current queue in chat.</td>
+  </tr>
+  <tr>
+    <td>!np</td>
+    <td>Prints the currently playing song in the chat.</td>
+  </tr>
+  <tr>
+    <td>!skip</td>
+    <td>Vote to skip the current song, Settings: 25% or 5 or more votes</td>
+  </tr>
+  <tr>
+    <td> !search [service] [number] &lt;query&gt; </td>
+    <td>Interactively search for a video to add to the queue. The bot will look up number videos and prompts the user to accept or deny each video. This command times out after 30 seconds, and has a hard limit of 10 max search items.</td>
+  </tr>
+  <tr>
+    <td>!shuffle</td>
+    <td>Shuffles the queue.</td>
+  </tr>
+  <tr>
+    <td>!clear</td>
+    <td>Clears the queue.</td>
+  </tr>
+  <tr>
+    <td>!pause</td>
+    <td>Pauses the playback of the current song.</td>
+  </tr>
+    <tr>
+    <td>!resume</td>
+    <td>Resumes playback of a paused song.</td>
+  </tr>
+    <tr>
+    <td>!volume [amount]</td>
+    <td>Changes the volume of the current song, or prints the current volume if an amount is not specified.  This affects all users.</td>
+  </tr>
+    <tr>
+    <td>!summon</td>
+    <td>Call the bot to your voice channel.  Obviously, you must be in a voice channel to use this command.</td>
+  </tr>
+    <tr>
+    <td>!help</td>
+    <td>Links to this page</td>
+  </tr>
+    <tr>
+    <td>!id [@user]</td>
+    <td>Prints the user's id in chat, or prints the id of the specified user. Must be a mention.</td>
+  </tr>
+</table>
+</center>
 </body>
 </html>
